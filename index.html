@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurex Digital — Software Company | Web, SaaS & AI</title>
+    <meta name="description" content="We build software that scales: web development, SaaS products, WhatsApp AI bots, and custom digital solutions. Chennai-based. Strong engineering. Clear results.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Magnetic Cursor -->
+    <div class="magnetic-cursor" id="magneticCursor"></div>
+
+    <!-- Intro Sequence -->
+    <div class="intro-sequence" id="intro">
+        <div class="intro-mask"></div>
+        <div class="intro-content">
+            <div class="intro-text-wrapper">
+                <h1 class="intro-title">
+                    <span class="intro-char" data-char="A">A</span>
+                    <span class="intro-char" data-char="U">U</span>
+                    <span class="intro-char" data-char="R">R</span>
+                    <span class="intro-char" data-char="E">E</span>
+                    <span class="intro-char" data-char="X">X</span>
+                    <span class="intro-space"></span>
+                    <span class="intro-char" data-char="D">D</span>
+                    <span class="intro-char" data-char="I">I</span>
+                    <span class="intro-char" data-char="G">G</span>
+                    <span class="intro-char" data-char="I">I</span>
+                    <span class="intro-char" data-char="T">T</span>
+                    <span class="intro-char" data-char="A">A</span>
+                    <span class="intro-char" data-char="L">L</span>
+                </h1>
+                <div class="intro-subtitle">
+                    <span class="subtitle-line">Software that</span>
+                    <span class="subtitle-line">scales</span>
+                </div>
+            </div>
+        </div>
+        <canvas class="intro-canvas" id="introCanvas"></canvas>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav" id="floatingNav">
+        <div class="nav-brand">
+            <span class="nav-brand-text">AD</span>
+            <div class="nav-brand-line"></div>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link" data-text="Home">Home</a>
+            <a href="#philosophy" class="nav-link" data-text="Philosophy">Philosophy</a>
+            <a href="#capabilities" class="nav-link" data-text="Capabilities">Capabilities</a>
+            <a href="#team" class="nav-link" data-text="Team">Team</a>
+            <a href="#contact" class="nav-link nav-cta" data-text="Start Project">Start Project</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+        </button>
+    </nav>
+
+    <main>
+        <!-- Hero Section - Asymmetric Layout -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background">
+                <div class="hero-gradient-orb"></div>
+                <div class="hero-mesh"></div>
+                <div class="hero-particles"></div>
+                <!-- SVG artifacts - storyline / software vibe -->
+                <div class="hero-svg-artifacts" aria-hidden="true">
+                    <svg class="hero-svg hero-svg-blob" viewBox="0 0 400 400" fill="none">
+                        <path d="M200 40c55 0 100 45 100 100s-45 100-100 100-100-45-100-100 45-100 100-100z" stroke="url(#heroBlobGrad)" stroke-width="1.5" fill="none" opacity="0.6"/>
+                        <defs><linearGradient id="heroBlobGrad" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+                    </svg>
+                    <svg class="hero-svg hero-svg-line" viewBox="0 0 600 120" fill="none">
+                        <path d="M0 60 Q150 20 300 60 T600 60" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4" stroke-dasharray="8 6"/>
+                    </svg>
+                    <svg class="hero-svg hero-svg-dots" viewBox="0 0 200 80" fill="none">
+                        <circle cx="20" cy="40" r="2" fill="currentColor" opacity="0.5"/><circle cx="60" cy="25" r="2" fill="currentColor" opacity="0.4"/>
+                        <circle cx="100" cy="55" r="2" fill="currentColor" opacity="0.6"/><circle cx="140" cy="35" r="2" fill="currentColor" opacity="0.4"/>
+                        <circle cx="180" cy="45" r="2" fill="currentColor" opacity="0.5"/>
+                    </svg>
+                    <svg class="hero-svg hero-svg-circuit" viewBox="0 0 300 200" fill="none">
+                        <path d="M0 100h60v-30h40v60h-40v-30H0" stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.35"/>
+                        <path d="M120 70v60M160 70v60M200 70v60" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+                        <circle cx="120" cy="100" r="4" fill="currentColor" opacity="0.5"/><circle cx="160" cy="100" r="4" fill="currentColor" opacity="0.5"/><circle cx="200" cy="100" r="4" fill="currentColor" opacity="0.5"/>
+                        <path d="M240 80l30 20-30 20V80z" stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.4"/>
+                    </svg>
+                    <svg class="hero-svg hero-svg-rings" viewBox="0 0 200 200" fill="none">
+                        <circle cx="100" cy="100" r="60" stroke="currentColor" stroke-width="1" opacity="0.25"/>
+                        <circle cx="100" cy="100" r="40" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+                        <circle cx="100" cy="100" r="20" stroke="currentColor" stroke-width="1" opacity="0.15"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="hero-container">
+                <div class="hero-left">
+                    <div class="hero-label">
+                        <span class="label-text">We Build</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line" data-text="Software">Software</span>
+                        <span class="title-line title-accent" data-text="that">that</span>
+                        <span class="title-line" data-text="scales">scales</span>
+                    </h1>
+                    <p class="hero-description">
+                        Web development. SaaS products. WhatsApp AI bots.<br>
+                        We build the digital systems your business needs—<br>
+                        fast, reliable, and built to last.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn-magnetic">
+                            <span class="btn-text">Start Project</span>
+                            <div class="btn-ripple"></div>
+                        </a>
+                        <a href="#capabilities" class="btn-text-link">
+                            <span>What we build</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="hero-stats-grid">
+                        <div class="stat-card" data-stat="reply">
+                            <div class="stat-value-wrapper">
+                                <span class="stat-prefix">&lt;</span>
+                                <span class="stat-value" data-target="24" data-format="int">0</span>
+                                <span class="stat-unit">h</span>
+                            </div>
+                            <div class="stat-label">First Reply</div>
+                            <p class="stat-story">We get back to you within a day—no black hole.</p>
+                            <div class="stat-line"></div>
+                        </div>
+                        <div class="stat-card" data-stat="uptime">
+                            <div class="stat-value-wrapper">
+                                <span class="stat-value" data-target="99.9" data-format="decimal">0</span>
+                                <span class="stat-unit">%</span>
+                            </div>
+                            <div class="stat-label">Uptime</div>
+                            <p class="stat-story">Systems we build are built to stay up.</p>
+                            <div class="stat-line"></div>
+                        </div>
+                        <div class="stat-card" data-stat="founders">
+                            <div class="stat-value-wrapper">
+                                <span class="stat-value" data-target="3" data-format="int">0</span>
+                            </div>
+                            <div class="stat-label">Co-Founders</div>
+                            <p class="stat-story">Three hands on your project—not a ticket queue.</p>
+                            <div class="stat-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-scroll-hint">
+                <div class="scroll-text">Scroll</div>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="philosophy-section">
+            <div class="section-gradient-orb section-gradient-orb--philosophy" aria-hidden="true"></div>
+            <div class="philosophy-svg-storyline" aria-hidden="true">
+                <svg class="storyline-svg" viewBox="0 0 1200 400" fill="none">
+                    <path class="storyline-path" d="M 100 200 Q 350 80 600 200 T 1100 200" stroke="var(--accent)" stroke-width="2" fill="none" opacity="0.35" stroke-dasharray="12 8"/>
+                    <circle class="storyline-node" cx="100" cy="200" r="8" fill="var(--bg-secondary)" stroke="var(--accent)" stroke-width="2"/>
+                    <circle class="storyline-node" cx="600" cy="200" r="8" fill="var(--bg-secondary)" stroke="var(--accent)" stroke-width="2"/>
+                    <circle class="storyline-node" cx="1100" cy="200" r="8" fill="var(--bg-secondary)" stroke="var(--accent)" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="philosophy-container">
+                <div class="section-header">
+                    <h2 class="section-title">When creativity meets precision</h2>
+                    <p class="section-description">
+                        Your competitors use off-the-shelf tools. You get custom software.<br>
+                        That's not just a product—that's a lasting advantage.
+                    </p>
+                </div>
+                <div class="philosophy-content">
+                    <div class="philosophy-card">
+                        <h3 class="card-title">We see what others don't</h3>
+                        <p class="card-text">Your business isn't generic. Why should your software be? We see the unique problem you need to solve and build systems that fit.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <h3 class="card-title">We build what others can't</h3>
+                        <p class="card-text">Custom web apps. SaaS platforms. AI-powered automation. These aren't templates—they're solutions engineered for your vision and scale.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <h3 class="card-title">We deliver what others won't</h3>
+                        <p class="card-text">Zero dependencies. Sub-second load times. Perfect performance. We don't compromise on quality because your success depends on it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities Section -->
+        <section id="capabilities" class="capabilities-section">
+            <div class="section-gradient-orb section-gradient-orb--capabilities" aria-hidden="true"></div>
+            <div class="capabilities-svg-bg" aria-hidden="true">
+                <svg class="capabilities-grid-svg" viewBox="0 0 1200 800" fill="none">
+                    <defs>
+                        <pattern id="capGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+                            <path d="M 80 0 L 0 0 0 80" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.12"/>
+                        </pattern>
+                    </defs>
+                    <rect width="1200" height="800" fill="url(#capGrid)"/>
+                    <ellipse cx="200" cy="200" rx="120" ry="80" stroke="currentColor" stroke-width="1" fill="none" opacity="0.08"/>
+                    <ellipse cx="1000" cy="600" rx="150" ry="100" stroke="currentColor" stroke-width="1" fill="none" opacity="0.08"/>
+                </svg>
+            </div>
+            <div class="capabilities-container">
+                <div class="section-header">
+                    <h2 class="section-title">What we create</h2>
+                    <p class="section-description">
+                        From websites to SaaS to AI bots—we build software that works.<br>
+                        Clear scope. Strong engineering. Delivered on time.
+                    </p>
+                </div>
+                <div class="capabilities-grid">
+                    <div class="capability-item" data-capability="1">
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 12l16-8 16 8v24l-16 8-16-8V12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 4v40M8 12l16 12 16-12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3 class="capability-title">Web Development</h3>
+                        <p class="capability-description">Custom websites and web apps—fast, responsive, and built to convert. From marketing sites to complex web applications.</p>
+                        <ul class="capability-features">
+                            <li>Custom websites & web apps</li>
+                            <li>Modern stacks, clean code</li>
+                            <li>Performance-first builds</li>
+                        </ul>
+                    </div>
+                    <div class="capability-item" data-capability="2">
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 8L8 18v12l16 10 16-10V18L24 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 8v32M8 18l16 10 16-10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3 class="capability-title">SaaS Development</h3>
+                        <p class="capability-description">Scalable software-as-a-service: dashboards, APIs, subscriptions, and multi-tenant architecture that grows with you.</p>
+                        <ul class="capability-features">
+                            <li>Product design & architecture</li>
+                            <li>Subscriptions & billing</li>
+                            <li>APIs & integrations</li>
+                        </ul>
+                    </div>
+                    <div class="capability-item" data-capability="3">
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M12 36c-2 0-4-2-4-4V16c0-2 2-4 4-4h24c2 0 4 2 4 4v16c0 2-2 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 24h16M20 28h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="32" cy="14" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <h3 class="capability-title">WhatsApp AI Bots</h3>
+                        <p class="capability-description">Automate support, sales, and workflows with AI-powered WhatsApp bots. Integrate with your systems and scale conversations.</p>
+                        <ul class="capability-features">
+                            <li>Conversational AI & automation</li>
+                            <li>CRM & backend integration</li>
+                            <li>24/7 automated responses</li>
+                        </ul>
+                    </div>
+                    <div class="capability-item" data-capability="4">
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3 class="capability-title">Performance & Architecture</h3>
+                        <p class="capability-description">Systems that stay fast as you grow. We design for scale, security, and maintainability from day one.</p>
+                        <ul class="capability-features">
+                            <li>Scalable architecture</li>
+                            <li>Security & reliability</li>
+                            <li>Clear documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section">
+            <div class="section-gradient-orb section-gradient-orb--team" aria-hidden="true"></div>
+            <div class="team-container">
+                <div class="section-header">
+                    <h2 class="section-title">The people behind Aurex</h2>
+                    <p class="section-description">
+                        Co-Founders and Digital Consultants—focused on craft, clarity, and results.
+                    </p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card" data-team="1">
+                        <div class="team-card-inner">
+                            <div class="team-avatar">
+                                <svg viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                                    <circle cx="60" cy="60" r="58" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+                                    <circle cx="60" cy="48" r="18" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                                    <path d="M30 110c0-16.5 13.5-30 30-30s30 13.5 30 30" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                                </svg>
+                            </div>
+                            <h3 class="team-name">Divesh</h3>
+                            <p class="team-title">Co-Founder & Digital Consultant</p>
+                        </div>
+                    </div>
+                    <div class="team-card" data-team="2">
+                        <div class="team-card-inner">
+                            <div class="team-avatar">
+                                <svg viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                                    <circle cx="60" cy="60" r="58" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+                                    <circle cx="60" cy="48" r="18" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                                    <path d="M30 110c0-16.5 13.5-30 30-30s30 13.5 30 30" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                                </svg>
+                            </div>
+                            <h3 class="team-name">Yogitha</h3>
+                            <p class="team-title">Co-Founder & Digital Consultant</p>
+                        </div>
+                    </div>
+                    <div class="team-card" data-team="3">
+                        <div class="team-card-inner">
+                            <div class="team-avatar">
+                                <svg viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                                    <circle cx="60" cy="60" r="58" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+                                    <circle cx="60" cy="48" r="18" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                                    <path d="M30 110c0-16.5 13.5-30 30-30s30 13.5 30 30" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                                </svg>
+                            </div>
+                            <h3 class="team-name">Jatin Ranka</h3>
+                            <p class="team-title">Co-Founder & Digital Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-section-svg" aria-hidden="true">
+                <svg class="team-connector-svg" viewBox="0 0 900 180" fill="none">
+                    <path class="team-connector-path" d="M 450 10 L 450 80 M 150 160 L 450 80 M 750 160 L 450 80" stroke-width="1" opacity="0.25" stroke-dasharray="6 4"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-gradient-orb section-gradient-orb--about" aria-hidden="true"></div>
+            <div class="about-container">
+                <div class="about-left">
+                    <div class="about-label">
+                        <span class="label-text">About Us</span>
+                    </div>
+                    <h2 class="about-title">Break the mold</h2>
+                </div>
+                <div class="about-right">
+                    <div class="about-content">
+                        <p class="about-lead">
+                            We're a Chennai-based software company. We build web applications, SaaS products, WhatsApp AI bots, and custom software—the kind of systems we'd want for our own business: reliable, scalable, and built to last.
+                        </p>
+                        <p class="about-body">
+                            Founded by Divesh, Yogitha, and Jatin Ranka, we combine product thinking with strong engineering. We don't ship templates or one-size-fits-all solutions. We build software that fits your goals and scales with you.
+                        </p>
+                        <div class="about-meta">
+                            <div class="meta-row">
+                                <span class="meta-label">Location</span>
+                                <span class="meta-value">Chennai, India</span>
+                            </div>
+                            <div class="meta-row">
+                                <span class="meta-label">Focus</span>
+                                <span class="meta-value">Web, SaaS, AI automation</span>
+                            </div>
+                            <div class="meta-row">
+                                <span class="meta-label">Philosophy</span>
+                                <span class="meta-value">Strong company. Clear delivery.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-gradient-orb section-gradient-orb--contact" aria-hidden="true"></div>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <div class="contact-label">
+                        <span class="label-text">Get in Touch</span>
+                    </div>
+                    <h2 class="contact-title">
+                        Let's build<br>
+                        something<br>
+                        <span class="title-accent">extraordinary</span>
+                    </h2>
+                    <p class="contact-description">
+                        Tell us what you need. We'll get back with a clear plan and a fair quote.
+                    </p>
+                    <div class="contact-info">
+                        <a href="tel:+918610417194" class="contact-link">
+                            <span class="link-icon">📞</span>
+                            <span class="link-text">+91 86104 17194</span>
+                        </a>
+                        <div class="contact-address">
+                            <span class="address-icon">📍</span>
+                            <address>
+                                Rainbow Plaza, No. 109 Audiappa Naicken Street,<br>
+                                1st Floor, Chennai – 600079
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="contact-form-title">Send a message</h3>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" required class="form-input" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" required class="form-input" placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Optional">
+                        </div>
+                        <div class="form-group">
+                            <label for="service" class="form-label">What do you need?</label>
+                            <select id="service" name="service" class="form-input">
+                                <option value="">Select a service</option>
+                                <option value="website">Web development</option>
+                                <option value="saas">SaaS product</option>
+                                <option value="whatsapp-ai">WhatsApp AI bot</option>
+                                <option value="redesign">Website / app redesign</option>
+                                <option value="other">Something else</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group-textarea">
+                            <label for="message" class="form-label">Project details</label>
+                            <textarea id="message" name="message" rows="4" required class="form-input" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span class="btn-submit-text">Send Message</span>
+                            <div class="btn-submit-arrow">→</div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-brand-text">Aurex Digital</span>
+                    <div class="footer-brand-line"></div>
+                </div>
+                <p class="footer-tagline">Software that scales — Web, SaaS & AI</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aurex Digital. Chennai, India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

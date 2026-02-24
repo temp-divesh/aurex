@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found — Aurex Digital</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Aurex Digital.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="magnetic-cursor" id="magneticCursor"></div>
+
+    <nav class="floating-nav visible" id="floatingNav">
+        <a href="index.html" class="nav-brand" style="text-decoration: none; color: inherit;">
+            <span class="nav-brand-text">AD</span>
+            <div class="nav-brand-line"></div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html#hero" class="nav-link">Home</a>
+            <a href="index.html#philosophy" class="nav-link">Philosophy</a>
+            <a href="index.html#capabilities" class="nav-link">Capabilities</a>
+            <a href="index.html#team" class="nav-link">Team</a>
+            <a href="index.html#contact" class="nav-link nav-cta">Start Project</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+        </button>
+    </nav>
+
+    <main class="error-page">
+        <div class="section-gradient-orb section-gradient-orb--error" aria-hidden="true"></div>
+        <div class="error-page-content">
+            <p class="error-page-code">404</p>
+            <h1 class="error-page-title">Page not found</h1>
+            <p class="error-page-text">The link you opened doesn’t exist or has been moved.</p>
+            <a href="index.html" class="btn-magnetic error-page-cta">
+                <span class="btn-text">Back to home</span>
+                <div class="btn-ripple"></div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-brand-text">Aurex Digital</span>
+                    <div class="footer-brand-line"></div>
+                </div>
+                <p class="footer-tagline">Software that scales — Web, SaaS & AI</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aurex Digital. Chennai, India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            var nav = document.getElementById('floatingNav');
+            if (nav) nav.classList.add('visible');
+            var toggle = document.getElementById('navToggle');
+            var links = document.querySelector('.nav-links');
+            if (toggle && links) {
+                toggle.addEventListener('click', function() {
+                    toggle.classList.toggle('active');
+                    links.classList.toggle('active');
+                });
+            }
+            if (window.innerWidth > 768) {
+                var cursor = document.getElementById('magneticCursor');
+                if (cursor) cursor.classList.add('active');
+            }
+        })();
+    </script>
+</body>
+</html>
